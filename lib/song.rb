@@ -12,8 +12,10 @@ class Song
   
   def self.create
     song = self.new
-    self.all << song
+    self.all.inlcude?(song)
     song
   end
+  
+  def self.new_by_name()
 
 end
