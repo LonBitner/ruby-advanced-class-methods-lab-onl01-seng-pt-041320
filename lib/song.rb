@@ -10,9 +10,9 @@ class Song
     self.class.all << self
   end
   
-  def self.create_name(title)
-    song = self.new
-    song.name = title
+  def self.create_name(track)
+    song = self.create
+    song.name = track
     song
   end
 
